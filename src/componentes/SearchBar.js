@@ -15,7 +15,7 @@ function SearchBar() {
     event.preventDefault();
 
     // Realizar la búsqueda y obtener los resultados
-    fetch(`http://localhost:5000/api/search?q=${searchTerm}&type=message`)
+    fetch(`https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/api/search?q=${searchTerm}&type=message`)
       .then((response) => response.json())
       .then((data) => {
         setError(null);

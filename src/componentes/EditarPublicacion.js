@@ -36,7 +36,7 @@ function EditarPublicacion() {
   const handleSaveChanges = async () => {
     try {
       // Envía los cambios al servidor
-      await axios.put(`http://localhost:5000/api/editar_publicacion/${postId}`, post);
+      await axios.put(`https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/api/editar_publicacion/${postId}`, post);
 
       // Después de guardar con éxito, redirige al usuario a la página de detalles de la publicación
       

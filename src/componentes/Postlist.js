@@ -24,7 +24,7 @@ const PostList = () => {
   const deletePost = async (postId) => {
     try {
       // Realiza una solicitud para eliminar el post con el ID dado
-      await axios.delete(`http://localhost:5000/api/eliminar_post/${postId}`);
+      await axios.delete(`https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/api/eliminar_post/${postId}`);
       // Actualiza la lista de posts después de la eliminación
       const updatedPosts = posts.filter((post) => post.id !== postId);
       setPosts(updatedPosts);

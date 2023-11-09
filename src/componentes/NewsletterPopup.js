@@ -20,7 +20,7 @@ const NewsletterPopup = ({ onClose }) => {
       };
   
       // Realizar la solicitud POST al backend utilizando Axios
-      const response = await axios.post('http://localhost:5000/api/suscribir', formData, {
+      const response = await axios.post('https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/api/suscribir', formData, {
         headers: {
           'Content-Type': 'application/json',
         },

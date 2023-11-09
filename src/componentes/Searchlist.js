@@ -1,5 +1,5 @@
 const handleSearch = (query) => {
-    fetch(`http://localhost:5000/api/search?q=${query}`)
+    fetch(`https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/api/search?q=${query}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Error en la solicitud.");

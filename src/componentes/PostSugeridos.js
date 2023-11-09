@@ -7,7 +7,7 @@ const PostSugeridos = () => {
   const [sugerencias, setSugerencias] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/last_posts')
+    axios.get('https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/api/last_posts')
       .then(response => {
         setSugerencias(response.data);
       })
@@ -26,7 +26,7 @@ const PostSugeridos = () => {
           <div key={index} className="card-post-sugeridos">
             <Link to={`/post/${post.id}`} className="button">
               <div className="image-container">
-                <img src={`http://localhost:5000/img/${post.image}`} alt={post.title} />
+                <img src={`https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/img/${post.image}`} alt={post.title} />
               </div>
             </Link>
             <Link to={`/post/${post.id}`} className="post-title-link">

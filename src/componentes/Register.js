@@ -13,7 +13,7 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/api/register', {
+      const response = await axios.post('https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/api/register', {
         username,
         password,
         email, // Incluimos el valor del correo electrónico en la solicitud

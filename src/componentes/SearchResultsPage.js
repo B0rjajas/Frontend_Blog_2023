@@ -16,7 +16,7 @@ function SearchResultsPage() {
     <div className="contenedor">
       <h2 className="titulo">Detalles del Blog</h2>
       <div className="espacio">
-      <img src={`http://localhost:5000/img/${result.image}`} alt={result.title} />
+      <img src={`https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/img/${result.image}`} alt={result.title} />
       </div>
       <h3 className="detalle">{result.title}</h3>
       <p className="parrafo">{result.message}</p>

@@ -12,7 +12,7 @@ function PostDetailPage() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/obtener_publicacion/${post_id}`)
+      .get(`https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/api/obtener_publicacion/${post_id}`)
       .then((response) => {
         setPost(response.data);
       })
@@ -23,7 +23,7 @@ function PostDetailPage() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5000/api/eliminar_post/${post_id}`);
+      await axios.delete(`https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/api/eliminar_post/${post_id}`);
       // Después de eliminar el post, puedes redirigir al usuario a una página de inicio o a la lista de publicaciones
       navigate("/");
     } catch (error) {
@@ -35,7 +35,7 @@ function PostDetailPage() {
     // Aquí puedes implementar la lógica para compartir en redes sociales, como WhatsApp o Facebook.
     // Por ejemplo, puedes abrir una ventana emergente con el enlace al post para compartirlo.
     if (post) {
-      const shareURL = `http://localhost:5000/post/${post.id}`;
+      const shareURL = `https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/post/${post.id}`;
       window.open(`https://wa.me/?text=${encodeURIComponent(shareURL)}`, "_blank");
       // Esto abrirá WhatsApp con un mensaje que contiene el enlace al post.
     }
@@ -55,7 +55,7 @@ function PostDetailPage() {
   return (
     <div className="contenedor">
       <div className="espacio">
-        <img src={`http://localhost:5000/img/${post.image}`} alt={post.title} />
+        <img src={`https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/img/${post.image}`} alt={post.title} />
       </div>
       <h2>{post.title}</h2>
       <div className="parrafo">

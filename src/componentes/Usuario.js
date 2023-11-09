@@ -6,7 +6,7 @@ const Usuario = ({ userId }) => {
 
   useEffect(() => {
     // Realizar una solicitud GET al backend para obtener los detalles del usuario
-    axios.get(`http://localhost:5000/api/user/${userId}`)
+    axios.get(`https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/api/user/${userId}`)
       .then(response => {
         setUserData(response.data);
       })

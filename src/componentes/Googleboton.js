@@ -1,4 +1,5 @@
 // Googleboton.js
+import React from 'react';
 import { GoogleLogin } from 'react-google-login';
 
 const client_id = "19180977390-3r61h20l5259p9rdnfe8p0mv1500aicv.apps.googleusercontent.com";

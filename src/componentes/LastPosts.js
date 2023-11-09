@@ -5,7 +5,7 @@ function LastPosts() {
 
     useEffect(() => {
         // Realizar la solicitud a la API para obtener los últimos posts
-        fetch('http://localhost:5000/api/last_posts')
+        fetch('https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/api/last_posts')
             .then(response => response.json())
             .then(data => setLastPosts(data))
             .catch(error => console.error('Error al cargar los últimos posts:', error));

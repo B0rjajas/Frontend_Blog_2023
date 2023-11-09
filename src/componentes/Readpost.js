@@ -8,7 +8,7 @@ const ReadPost = ({ match }) => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/obtener_publicacion/${postId}`);
+        const response = await axios.get(`https://bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ujaqz3w25wtt4t6e/obtener_publicacion/${postId}`);
         setPost(response.data); // Actualiza el estado con los detalles del post
       } catch (error) {
         console.error('Error al cargar el post:', error);
